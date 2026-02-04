@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrzej Strzemżalski | Kompozytor</title>
+    <style>
+        /* RESET I PODSTAWOWE STYLE */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* LEWA STRONA: ZDJĘCIE */
+        .image-side {
+            width: 100%;
+            background: #000;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(100%); /* Efekt czarno-biały */
+            transition: filter 0.5s ease;
+        }
+
+        /* PRAWA STRONA: TREŚĆ */
+        .content-side {
+            padding: 40px 25px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin-top: 10px;
+            color: #666;
+            letter-spacing: 1px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            max-width: 550px;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+
+        /* SEKCJE MUZYCZNE */
+        .music-section {
+            max-width: 550px;
+        }
+
+        .section-title {
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin: 40px 0 20px 0;
+        }
+
+        .embed-container {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-bottom: 20px;
+            font-size: 0.75rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* UKŁAD DLA KOMPUTERÓW (DESKTOP) */
+        @media (min-width: 900px) {
+            .wrapper {
+                flex-direction: row;
+            }
+            .image-side {
+                width: 45%;
+                height: 100vh;
+                position: sticky;
+                top: 0;
+            }
+            .image-side img {
+                height: 100vh;
+                object-fit: cover;
+            }
+            .content-side {
+                width: 55%;
+                padding: 80px 100px;
+                overflow-y: auto;
+            }
+            h1 { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="image-side">
+            <img src="twoje-zdjecie.jpg" alt="Andrzej Strzemżalski">
+        </div>
+
+        <div class="content-side">
+            <header>
+                <h1>Andrzej<br>Strzemżalski</h1>
+                <h2>composer, producer, sound designer</h2>
+            </header>
+
+            <main>
+                <section class="bio">
+                    <p>Created music for a number of films, theatre plays and video games. Also known as <b> ENDY YDEN </b>.
+                    Listen to the music below, then scroll down to the BIO. </p>
+                </section>
+
+                <h3 class="section-title">Selection of works</h3>
+
+                <div class="music-section">
+                    <div class="embed-container">
+                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2185984376%3Fsecret_token%3Ds-49FO5JeARDH&color=%23000000&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/kapitan-planeta" title="strzemżalski" target="_blank" style="color: #cccccc; text-decoration: none;">strzemżalski</a> · <a href="https://soundcloud.com/kapitan-planeta/sets/andrzej-strzem-alski-selection" title="Andrzej Strzemżalski // selection of works" target="_blank" style="color: #cccccc; text-decoration: none;">Andrzej Strzemżalski // selection of works</a></div>
+                    </div>
+
+                    <h3 class="section-title">Released Music</h3>
+                    
+                    <div class="embed-container">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/album/4n79rEvAm5zkSS2cpjyO4V?si=2l5sSDtqSwucKok3betpAw?utm_source=generator&theme=0" 
+                            width="100%" height="152" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="embed-container">
+                        <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/album/7AC1bYlkxYptT28XnUUSNl?si=DOj-QEiiRvufOktj1KTZqg?utm_source=generator&theme=0" 
+                            width="100%" height="152" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <h3 class="section-title">BIO</h3>
+                <section class="bio">
+                    <p>
+                        <strong>Andrzej Strzemżalski</strong> (performing as <strong>Endy Yden</strong>) is a Wrocław-based composer, music producer, and multi-instrumentalist. 
+                        Bridging the gap between avant-garde electronic pop and immersive media scoring, he combines a classical foundation in piano and oboe with a mastery of analog synthesis.
+                    </p>
+                
+                    <h3 class="section-title">Theater & Film</h3>
+                    <p>
+                        A recognized name in the Polish performing arts scene, Andrzej creates evocative soundscapes for visionary directors. 
+                        His portfolio includes the score for <strong>Jan Klata’s</strong> 2024 production of <em>Romeo and Juliet</em> (Capitol Musical Theatre), 
+                        the award-winning feature <strong>"Supernova"</strong> (dir. Bartosz Kruhlik), and the soundtrack for the 2nd season of Netflix’s 
+                        <strong>"The Green Glove Gang"</strong> (2024).
+                    </p>
+                
+                    <h3 class="section-title">Video Games & Sound Design</h3>
+                    <p>
+                        As a long-time collaborator with <strong>Mass Creation</strong> and <strong>We Dig Games</strong>, he is known for a holistic approach where the boundary between music and sound design disappears. 
+                        His genre-spanning work includes:
+                    </p>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+                        <li>• <strong>Disco Samurai (2025)</strong> – Neon-soaked high-energy soundtrack.</li>
+                        <li>• <strong>Hamster Playground (2024)</strong> – Whimsical and playful audio environment.</li>
+                        <li>• <strong>Date Z (2024)</strong> – Atmospheric tension for narrative horror.</li>
+                        <li>• <strong>Shing! (2020)</strong> – Rhythmic pulse with an ethnic twist.</li>
+                    </ul>
+                
+                    <h3 class="section-title">Solo Career & Identity</h3>
+                    <p>
+                        Under the moniker <strong>Endy Yden</strong>, he explores cinematic melancholy and the "hauntology" of 80s synth-pop. 
+                        His debut album <strong>"GTFO!" (2018)</strong> was described as a 'patchwork of sonic memories,' blending pop melodies with experimental ambitions.
+                    </p>
+                    <p>
+                        Throughout his career, he has shared the stage and studio with artists such as <strong>Nils Petter Molvaer</strong>, 
+                        <strong>Arve Henriksen</strong>, <strong>Golan</strong> and <strong>Hania Rani</strong>. He also co-hosts "Blok Alternatywny" on <strong>Radio RAM</strong>, 
+                        shaping the musical landscape of Wrocław.
+                    </p>
+                </section>
+                
+            </main>
+            <h3 class="section-title">Contact & Socials</h3>
+            
+            <section class="contact-section" style="margin-top: 20px;">
+                <p style="font-size: 1.1rem; margin-bottom: 30px;">
+                    <a href="mailto:endyyden@gmail.com" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #1a1a1a; padding-bottom: 2px;">
+                        endyyden@gmail.com
+                    </a>
+                </p>
+
+                <div class="social-links" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/endy_yden/" target="_blank" class="social-item">Instagram</a>
+                    <a href="https://www.youtube.com/@endyyden" target="_blank" class="social-item">YouTube</a>
+                    <a href="https://www.facebook.com/endyyden" target="_blank" class="social-item">Facebook</a>
+                    <a href="soundcloud.com/endy-yden" target="_blank" class="social-item">SoundCloud</a>
+                    <a href="shttps://endyyden.bandcamp.com/music" target="_blank" class="social-item">Bandcamp</a>
+                    <a href="https://open.spotify.com/artist/2CRRX0k5EAmXvmm0la2vKU" target="_blank" class="social-item">Spotify</a>
+                </div>
+            </section>
+
+            <style>
+                .social-item {
+                    font-size: 0.85rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #666;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+                .social-item:hover {
+                    color: #000;
+                }
+            </style>
+
+<footer style="margin-top: 60px; padding-bottom: 20px; font-size: 0.75rem; color: #999; text-transform: uppercase; letter-spacing: 1px;">
+    <p>
+        © 2026 Andrzej Strzemżalski 
+        <span style="margin: 0 10px; opacity: 0.5;">|</span> 
+        Photography by <span style="color: #666;">Andrzej Sieńkowski</span>
+    </p>
+</footer>
+        </div>
+    </div>
+
+</body>
+</html>
