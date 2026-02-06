@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrzej Strzemżalski | Kompozytor & Sound Designer</title>
+    <style>
+        /* Stylistyka spójna z Twoim wizerunkiem */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Lewa strona: Zdjęcie */
+        .image-side {
+            width: 100%;
+            background: #000;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(100%);
+        }
+
+        /* Prawa strona: Treść */
+        .content-side {
+            padding: 50px 25px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .bio-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            max-width: 550px;
+            text-align: justify;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin: 40px 0 20px 0;
+        }
+
+        /* Stopka */
+        footer {
+            margin-top: 60px;
+            padding-bottom: 20px;
+            font-size: 0.75rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Układ Desktop */
+        @media (min-width: 900px) {
+            .wrapper { flex-direction: row; }
+            .image-side { width: 45%; height: 100vh; position: sticky; top: 0; }
+            .image-side img { height: 100vh; object-fit: cover; }
+            .content-side { width: 55%; padding: 80px 100px; overflow-y: auto; }
+            h1 { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="image-side">
+            <img src="twoje-zdjecie.jpg" alt="Andrzej Strzemżalski">
+        </div>
+
+        <div class="content-side">
+            <header>
+                <h1>Andrzej<br>Strzemżalski</h1>
+            </header>
+
+            <main>
+                <section class="bio-text">
+                    <p>
+                        <strong>Andrzej Strzemżalski (Endy Yden)</strong> – wrocławski kompozytor, producent, wokalista i sound designer, łączący w swojej twórczości muzykę ilustracyjną z awangardowym popem.
+                    </p>
+                    <p>
+                        Swoje brzmienie buduje na styku klasycznego instrumentarium i surowej, analogowej elektroniki. Autor m.in. muzyki do musicalu <strong>„Romeo i Julia”</strong> (reż. J. Klata), filmu <strong>„Supernova”</strong> (reż. Bartosz Kruhlik) oraz serialu <strong>„Gang Zielonej Rękawiczki”</strong> (Netflix).
+                    </p>
+                    <p>
+                        Tworzy oprawę muzyczną i dźwiękową gier video (m.in. <strong>Disco Samurai</strong>). Jako Endy Yden realizuje autorskie projekty muzyczne (m.in. album <strong>GTFO!</strong>). Dzielił studio i scenę z takimi artystami jak Nils Petter Molvaer, Hania Rani i Natalia Grosiak. Współpracuje z Radiem RAM.
+                    </p>
+                </section>
+
+                <h3 class="section-title">Selected Works</h3>
+                <div style="margin-bottom: 20px;">
+                    <iframe width="80%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2187054836%3Fsecret_token%3Ds-CCOPHRj9hap&color=%23000000&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/kapitan-planeta" title="strzemżalski" target="_blank" style="color: #cccccc; text-decoration: none;">strzemżalski</a> · <a href="https://soundcloud.com/kapitan-planeta/sets/andrzej-strzem-alski-1" title="Andrzej Strzemżalski // selection of works" target="_blank" style="color: #cccccc; text-decoration: none;">Andrzej Strzemżalski // selection of works</a></div>
+                </div>
+            </main>
+
+            <footer>
+                <p>© 2026 Andrzej Strzemżalski | Photo by Andrzej Sieńkowski</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
